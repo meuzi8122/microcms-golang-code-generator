@@ -1,0 +1,1 @@
+## MicroCMS用のGolang構造体ファイルを生成

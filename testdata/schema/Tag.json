@@ -1,0 +1,18 @@
+{
+    "apiFields": [
+        {
+            "idValue": "W34gdf",
+            "fieldId": "title",
+            "name": "タイトル",
+            "kind": "text",
+            "required": true
+        },
+        {
+            "fieldId": "name",
+            "name": "タグ",
+            "kind": "text",
+            "required": true
+        }
+    ],
+    "customFields": []
+}

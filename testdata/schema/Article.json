@@ -1,0 +1,54 @@
+{
+    "apiFields": [
+        {
+            "idValue": "uaZi_5ROW4",
+            "fieldId": "title",
+            "name": "タイトル",
+            "kind": "text",
+            "required": true
+        },
+        {
+            "fieldId": "body",
+            "name": "本文",
+            "kind": "textArea",
+            "required": true
+        },
+        {
+            "fieldId": "category",
+            "name": "カテゴリ",
+            "kind": "relation",
+            "required": true
+        },
+        {
+            "fieldId": "tags",
+            "name": "タグ",
+            "kind": "relationList",
+            "required": true
+        },
+        {
+            "fieldId": "views",
+            "name": "閲覧された回数",
+            "kind": "number",
+            "required": true
+        },
+        {
+            "fieldId": "status",
+            "name": "公開ステータス",
+            "kind": "select",
+            "required": true,
+            "selectItems": [
+                {
+                    "id": "j1CAsRs-SX",
+                    "value": "全体公開"
+                },
+                {
+                    "id": "VPnKOU-ek9",
+                    "value": "限定公開"
+                }
+            ],
+            "selectInitialValue": [],
+            "multipleSelect": true
+        }
+    ],
+    "customFields": []
+}

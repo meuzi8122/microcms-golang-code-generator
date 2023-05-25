@@ -24,7 +24,7 @@ func GenerateField(name string, kind string) *ast.Field {
 	} else if kind == "select" {
 		ftype = "[]DomainValue"
 	} else if kind == "relation" {
-		ftype = cases.Title(language.Und).String(pluralize.Singular(name))
+		ftype = cases.Title(language.Und).String(name)
 	} else if kind == "relationList" {
 		ftype = "[]" + cases.Title(language.Und).String(pluralize.Singular(name))
 	} else {

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"go/ast"
 	"go/format"
 	"go/token"
 	"os"
@@ -10,18 +9,6 @@ import (
 )
 
 func main() {
-
-	schemas := generator.GenerateSchemas("../ブログスキーマ")
-
-	specs := []ast.Spec{
-		generator.GenerateImageTypeSpec(),
-		generator.GenerateDomainValueTypeSpec(),
-	}
-
-	for _, schema := range schemas {
-		specs = append(specs, generator.GenerateTypeSpec(schema))
-	}
-
 	dname := "../cms"
 
 	os.Mkdir(dname, 0777)
@@ -29,9 +16,7 @@ func main() {
 
 	fset := token.NewFileSet()
 
-	node := generator.GenerateSourceFile("cms", []ast.Decl{
-		generator.GenerateTypeDecl(specs),
-	})
+	node := generator.GenerateSourceFile("../ブログスキーマ", "cms")
 
 	format.Node(f, fset, node)
 

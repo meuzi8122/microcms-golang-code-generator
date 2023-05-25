@@ -1,0 +1,18 @@
+{
+    "apiFields": [
+        {
+            "idValue": "kgb19g7df4",
+            "fieldId": "title",
+            "name": "タイトル",
+            "kind": "text",
+            "required": true
+        },
+        {
+            "fieldId": "name",
+            "name": "カテゴリ",
+            "kind": "text",
+            "required": true
+        }
+    ],
+    "customFields": []
+}
